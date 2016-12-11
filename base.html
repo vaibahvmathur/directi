@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title>Directi exercise-2</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript for Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest Fontawesome bootstap-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <!--Local CSS-->
+    <link href="./directi.css" rel="stylesheet">
+    <!--Local JS-->
+    <script src="./localjavascript.js"></script>
+
+</head>
+<body>
+    <div class="topNav">
+        <!-- Top NavBar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!--Logo-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Directi Exercise-2</a>
+                </div>
+                <!--MenuItems-->
+                <div class="collapse navbar-collapse" id="mainNavBar">
+                    <!-- NavBar Right side Items -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="#">Logout
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Navbar Search Item -->
+                    <div class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input type="text" id="keyword" placeholder="search..." class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default">
+                                 <i class="fa fa-search" aria-hidden="true"></i>
+                               </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-data">
+        <!-- Left Side NavBar -->
+        <nav class="nav-side-menu side-menu col-xs-12 col-sm-12 col-lg-3">
+            <div class="">
+                <!--Logo-->
+                <div class="navbar-header" style="width: 100%">
+                    <button type="button" style="background: black" class="navbar-toggle" data-toggle="collapse" data-target="#menu-content">
+                        <span class="icon-bar" style="background: white"></span>
+                        <span class="icon-bar" style="background: white"></span>
+                        <span class="icon-bar" style="background: white"></span>
+                    </button>
+                    <div class="brand">Brand Logo</div>
+                </div>
+                <!--Menu Items-->
+                <div class="collapse navbar-collapse" id="menu-content">
+                    <ul>
+                        <h4>Main Menu</h4>
+                        <li class="active overview">
+                          <a href="#">
+                            <i class="fa fa-compass fa-lg"></i>Overview
+                          </a>
+                        </li>
+                        <li class="activity">
+                          <a href="#">
+                             <i class="fa fa-cogs fa-lg"></i> Activity
+                          </a>
+                        </li>
+                        <li class="dearest">
+                          <a href="#">
+                            <i class="fa fa-heart-o fa-lg"></i> Dearest
+                          </a>
+                        </li>
+                        <li class="folder">
+                          <a href="#">
+                            <i class="fa fa-folder fa-lg"></i> Folder
+                          </a>
+                        </li>
+                        <h4>Filter</h4>
+                        <li class="images">
+                          <a href="#">
+                          <i class="fa fa-picture-o fa-lg"></i> Images
+                          </a>
+                        </li>
+                        <li class="audio">
+                          <a href="#">
+                            <i class="fa fa-volume-up fa-lg"></i> Audio
+                          </a>
+                        </li>
+                        <li class="video">
+                          <a href="#">
+                            <i class="fa fa-file-video-o fa-lg"></i> Video
+                          </a>
+                        </li>
+                        <li class="notes">
+                          <a href="#">
+                            <i class="fa fa-sticky-note fa-lg"></i> Notes
+                          </a>
+                        </li>
+                        <li class="links">
+                          <a href="#">
+                            <i class="fa fa-link fa-lg"></i> Links
+                          </a>
+                        </li>
+                        <li class="files">
+                          <a href="#">
+                             <i class="fa fa-files-o fa-lg"></i> Files
+                          </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content / Data -->
+        <div class="main-content col-xs-12 col-sm-12 col-lg-offset-3 col-lg-9">
+            <div id="overview">
+                <div>
+                    <h3 class="content-title">Overview</h3>
+                </div>
+                <br/>
+                <div class="sec-menu">
+                    <!-- Add / Delete Icons -->
+                    <span>
+                        <i class="fa fa-plus-circle fa-2x fa-color" aria-hidden="true"></i>
+                        <i class="fa fa-print fa-2x fa-color" aria-hidden="true"></i>
+                        <i class="fa fa-lock fa-2x fa-color" aria-hidden="true"></i>
+                        <i class="fa fa-trash-o fa-2x fa-color" aria-hidden="true"></i>
+                    </span>
+                    <!-- Current Tabs / Filters -->
+                    <span style="padding-left: 50%;">
+                        <button type="button" class="btn btn-default">Name</button>
+                        <button type="button" class="btn btn-default">Size</button>
+                        <button type="button" class="btn btn-default">Views</button>
+                        <button type="button" class="btn btn-success ">Uploaded</button>
+                    </span>
+                </div>
+                <hr/>
+            </div>
+            <!-- Data Containers left menu item based -->
+            <div class="">
+                <div class="row my_items">
+                </div>
+            </div>
+            <div id="dearest"></div>
+            <div id="activity"></div>
+            <div id="folder"></div>
+            <div id="images"></div>
+            <div id="audio"></div>
+            <div id="video"></div>
+            <div id="notes"></div>
+            <div id="links"></div>
+            <div id="files"></div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
