@@ -1,0 +1,2 @@
+# directi
+exercise2
